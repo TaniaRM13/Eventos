@@ -1,0 +1,19 @@
+{
+  "name": "eventos",
+  "version": "1.0.0",
+  "description": "Página para control de material de eventos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaniaRM13/Eventos.git"
+  },
+  "keywords": [
+    "Eventos",
+    "material"
+  ],
+  "author": "Tania Rascón",
+  "license": "ISC"
+}
