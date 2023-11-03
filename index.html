@@ -12,45 +12,40 @@
     </header>
     <main>
         <div class="contenido filtros">
-            <label for="material">Material a buscar: </label>
-            <select name="material" id="material">
-                <option value="vallas">Vallas</option>
-                <option value="Malla sombra">Malla sombra</option>
-            </select>
             <label for="fecha">Fecha:</label>
             <input type="date" name="fecha" id="fecha">
-            <label for="hora_inicio">De:</label>
-            <input type="time" name="hora_inicio" id="hora_inicio">
-            <label for="hora_fin">A:</label>
-            <input type="time" name="hora_fin" id="hora_fin">
             <input type="button" value="Buscar">
         </div>
         <div class="contenido resultados">
-            <h3>Resultado de la busqueda: "<span id="busqueda"></span>". Para la fecha: <span id="fecha_busqueda"></span></h3>
+            <h3>Resultado de la busqueda: </h3>
             <table>
                 <tr>
-                    <th>Disponibilidad</th>
-                    <th>Cantidad</th>
+                    <th>Seleccionar</th>
+                    <th>Material</th>
+                    <th>Cantidad disponible</th>
                     <th>Horario de ocupación</th>
                     <th>Evento</th>
-                    <th>Agendar</th>
+                    <th>Cantidad a reservar</th>
                 </tr>
                 <tr>
-                    <td>No disponible</td>
+                    <td><input type="checkbox" name="select" id=""></td>
+                    <td>Bocinas satelitales</td>
                     <td>50</td>
                     <td>8:00 a 15:00</td>
                     <td>Club del abuelo</td>
-                    <td><input type="button" value="Anular reservación"></td>
+                    <td><input type="number" name="" id=""></td>
                 </tr>
                 <tr>
-                    <td>Disponible</td>
+                    <td><input type="checkbox" name="select" id=""></td>
+                    <td>Microfono inalambrico</td>
                     <td>10</td>
-                    <td>NA</td>
-                    <td>NA</td>
-                    <td><input type="button" value="Reservar"></td>
+                    <td>9:00 a 17:00</td>
+                    <td>Día de muertos</td>
+                    <td><input type="number" name="" id=""></td>
                 </tr>
             </table>
         </div>
+        <button>Reservar</button>
     </main>
 </body>
 </html>

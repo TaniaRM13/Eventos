@@ -1,0 +1,9 @@
+.contenido {
+  width: 500px;
+  margin-top: 70px;
+}
+.contenido .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
