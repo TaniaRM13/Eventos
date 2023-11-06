@@ -1,11 +1,18 @@
-.contenido {
-    width: 300px;
-    margin-top: 70px;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
-    .field {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        
-    }
+h1, h2, h3 {
+    text-align: center;
+}
+
+.contenido {
+    max-width: 120rem;
+    margin-top: 7rem auto;
+    display: flex;
+    justify-content: center;
 }
