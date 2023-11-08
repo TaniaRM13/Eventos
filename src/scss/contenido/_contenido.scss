@@ -11,8 +11,24 @@ h1, h2, h3 {
 }
 
 .contenido {
+    width: 95%;
     max-width: 120rem;
-    margin-top: 7rem auto;
+    margin: 2rem auto;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+.filtros {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resultados {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.reservar {
+    text-align: center;
+    margin-top: 1.5rem;
 }
