@@ -1,3 +1,10 @@
+<?php
+    require 'funciones.php';
+
+    $query = obtenerMateriales("materiales");
+    
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,27 +31,22 @@
                         <th>Material</th>
                         <th>Cantidad disponible</th>
                         <th>Horario de ocupación</th>
-                        <th>Evento</th>
                         <th>Cantidad a reservar</th>
                     </tr>
+                    <?php
+                        while($material = mysqli_fetch_assoc($query)){ ?>
                     <tr>
                         <td><input type="checkbox" name="select" id=""></td>
-                        <td>Bocinas satelitales</td>
-                        <td>50</td>
+                        <td><?php echo $material['nombre'] ?></td>
+                        <td><?php echo $material['cantidad'] ?></td>
                         <td><input type="time" name="" id="" disabled> a <input type="time"></td>
-                        <td><input type="text" name="" id=""></td>
                         <td><input type="number" name="" id="" min="0" max="200"></td>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox" name="select" id=""></td>
-                        <td>Microfono inalambrico</td>
-                        <td>10</td>
-                        <td><input type="time" name="" id=""> a <input type="time" name="" id=""></td>
-                        <td><input type="text" name="" id=""></td>
-                        <td><input type="number" name="" id="" min="0" max="200"></td>
-                    </tr>
+                        <?php } ?>
                 </table>
             </div>
+            <label for="evento">Evento: </label>
+            <input type="text" name="evento" id="evento">
             <button class="reservar">Reservar</button>
         </main>
     </div>

@@ -1,27 +1,25 @@
 <?php
 
-function obtenerMateriales() {
+function obtenerMateriales($tabla) {
     try {
         //Importar las credenciales
         require 'database.php';
 
         //Consulta SQL
-        $sql = "SELECT * FROM materiales;";
+        $sql = "SELECT * FROM " . $tabla . ";";
 
         //Realizar la consulta
         $query = mysqli_query($db, $sql);
 
         //Acceder a los resultados
+        /*
         echo "<pre>";
         var_dump(mysqli_fetch_all($query));
         echo "</pre>";
-        
-        //Cerrar la conexión (opcional)
-        mysqli_close($db);
+        */
+        return $query;
 
     } catch (\Throwable $th) {
         var_dump($th);
     }
 }
-
-obtenerMateriales();
