@@ -1,7 +1,11 @@
 <?php
     require 'funciones.php';
 
-    $query = obtenerMateriales("eventos");
+    $query = obtenerMateriales("usuarios");
+
+    echo "<pre>";
+    var_dump($_GET);
+    echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +19,17 @@
 <body>
     <main class="acceso contenido">
         <h3>Inicio de sesión</h3>
+        <form method="POST" action="/includes/login.php">
         <div class="field user">
             <label for="usuario">Usuario: </label>
-            <input type="text" name="usuario" id="">
+            <input type="text" name="user" id="user">
         </div>
         <div class="field password">
             <label for="psswd">Contraseña: </label>
-            <input type="password" name="psswd" id="">
+            <input type="password" name="psswd" id="psswd">
         </div>
-        <input type="button" value="Ingresar">
+        <input type="submit" value="Ingresar">
+        </form>
     </main>
 </body>
 </html>
