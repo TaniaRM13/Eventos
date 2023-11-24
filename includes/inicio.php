@@ -23,7 +23,7 @@
                 <div class="filtros">
                     <label for="fecha">Fecha:</label>
                     <input type="date" name="fecha" id="fecha">
-                    <input type="submit" value="Buscar">
+                    <input type="submit" value="Buscar">  
                 </div>
             </form>
             <h3>Resultado de la busqueda: </h3>
